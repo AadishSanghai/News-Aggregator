@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>News Aggregator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>News Aggregator</h1>
+        <button id="mode-toggle">Switch to Dark Mode</button>
+    </header>
+     <div class="userdata">   
+    <!-- User Registration/Login -->
+    <section id="auth-section">
+        <h2 class="userauth">User Authentication</h2>
+        <form id="registration-form">
+            <input type="text" id="username" placeholder="Enter username" required>
+            <input type="password" id="password" placeholder="Enter password" required>
+            <button type="submit" id="registerButton">Register</button>
+        </form>
+        <div>
+            <form id="login-form">
+                <input type="text" id="login-username" placeholder="Enter username" required>
+                <input type="password" id="login-password" placeholder="Enter password" required>
+                <button type="submit" id="loginButton">Login</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- User Preferences -->
+    <section id="preferences-section" style="display: none;">
+        <form id="preferences-form">
+        <h2>Select Your Preferred Categories</h2>
+            <label>
+                <input type="checkbox" name="category" value="Technology"> Technology
+            </label>
+            <label>
+                <input type="checkbox" name="category" value="Sports"> Sports
+            </label>
+            <label>
+                <input type="checkbox" name="category" value="Health"> Health
+            </label>
+            <label>
+                <input type="checkbox" name="category" value="Business"> Business
+            </label>
+            <button type="submit">Save Preferences</button>
+        </form>
+    </section>
+     </div>
+    <!-- Search button-->
+    <section id="search-section">
+        <input type="text" id="searchQuery" placeholder="Search for news...">
+        <button id="searchButton">Search</button>
+    </section>
+
+    <!-- bookmark section -->
+    <section id="bookmarks-container" style="display: block;">
+        <div id="bookmark"><marquee><h2>Bookmarks</h2></marquee></div>
+        <div id="bookmarks-list" >
+            <!-- Bookmarked articles will be displayed here -->
+        </div>
+    </section>
+
+
+    <section id="news-container">
+        <!-- News articles will be displayed here -->
+    </section>
+    
+    <footer>
+        <p>&copy;News Aggregator</p>
+        <span>By Aadish Sanghai</span>
+        <p> <a href="">sanghaiaadish@gmail.com</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+    
+    <button class="feat">Features of This site</button>
+    <div class="info">
+    <pre>The News Aggregator site offers the following features:
+
+        1. User Authentication:
+         Users can register and log in to personalize their experience.
+        2. Dark/Light Mode:
+         Toggle between dark and light themes for better readability.
+        3. News Search:
+         Search for news articles using keywords.
+        4. User Preferences:
+         Select preferred news categories to tailor content.
+        5. Bookmarks:
+         Save and manage favorite articles for easy access later.</pre>
+    </div>
+</body>
+</html>
